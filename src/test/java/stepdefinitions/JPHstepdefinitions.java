@@ -43,8 +43,8 @@ public class JPHstepdefinitions {
     }
 
     @Then("kullanici response status kodunun {int}")
-    public void kullanici_response_status_kodunun(Integer int1) {
-        response.then().assertThat().statusCode(200);
+    public void kullanici_response_status_kodunun(Integer statusCode) {
+        response.then().assertThat().statusCode(statusCode);
 
     }
 
